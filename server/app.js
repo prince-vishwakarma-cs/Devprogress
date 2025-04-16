@@ -5,7 +5,6 @@ import cookieParser from "cookie-parser";
 import userRouter from "./routes/user.js";
 import { errorMiddleware } from "./middlewares/error.js";
 import cors from "cors";
-import { gfg } from "./controllers/platforms.js";
 
 dotenv.config({
   path: ".env",
@@ -27,8 +26,6 @@ app.use(cookieParser());
 app.use(cors(corsOptions));
 
 app.use("/api/v1/user", userRouter);
-
-app.get("/gfg/:username",gfg)
 
 app.get("/", (req, res) => {
   res.send("Server is working");
