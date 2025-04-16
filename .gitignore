@@ -1,0 +1,29 @@
+# Node dependencies
+**/node_modules/
+
+# Environment variables
+**/.env
+
+# Build output
+client/dist/
+server/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite cache
+client/.vite/
+
+# IDE and OS files
+.DS_Store
+.vscode/
+*.swp
+*.swo
+
+# Dependency lockfiles (optional – if you want to commit only one)
+# Uncomment if you use only one lockfile
+# client/package-lock.json
+# server/package-lock.json

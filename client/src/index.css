@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-background:rgb(14, 15, 15);
+  --color-background-light:rgb(10,11,11);
+  --color-primary-text:rgb(255, 255, 255);
+  --color-secondary-text:rgba(255, 255, 255, 0.8);
+  --color-bordercolor:rgba(255, 255, 255, 0.3);
+  --color-accent:rgb(143, 253, 211);
+  --color-accent-bg:#8ffdd31a;
+  --color-accent-hover:rgb(92, 158, 133);
+  --color-hover-text:rgba(255, 255, 255, 0.08)
+}
+
+:root{
+  background-color: rgb(14, 15, 15);
+  color: white;
+}
+
+*{
+  font-family: "Urbanist", serif;
+  font-weight: 550;
+}
+
+body {
+  background-color: rgb(14, 15, 15); /* A darker background color */
+}
+
+.chip {
+  color: white;
+  padding: 8px 16px;
+  background-color:rgba(255, 255, 255, 0.08) ;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.chip:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color:rgb(143, 253, 211);
+}
+
+.active{
+  background-color: #8ffdd31a;
+  color:rgb(143, 253, 211);
+}
+
+
+/* Hide scrollbar for Webkit browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
