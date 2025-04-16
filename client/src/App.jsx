@@ -26,10 +26,10 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const NavChips = () => {
   return (
     <div className="flex space-x-4 !p-4 text-white overflow-x-auto whitespace-nowrap bg-background border-b border-bordercolor scrollbar-hide">
-      <NavLink to="/" className="chip">
+      {/* <NavLink to="/" className="chip">
         <span>Home</span>
-      </NavLink>
-      <NavLink to="/leetcode" className="chip">
+      </NavLink> */}
+      <NavLink to="/" className="chip">
         <span>Leetcode</span>
       </NavLink>
       <NavLink to="/codeforces" className="chip">
@@ -125,12 +125,12 @@ const App = () => {
               <div className="flex-1 overflow-y-auto ">
                 <Suspense fallback={<LoadingScreenExtras />}>
                   <Routes>
-                    <Route
+                    {/* <Route
                       path="/"
                       element={<PrivateRoute element={<Home />} />}
-                    />
+                    /> */}
                     <Route
-                      path="/leetcode"
+                      path="/"
                       element={<PrivateRoute element={<Leetcode />} />}
                     />
                     <Route
