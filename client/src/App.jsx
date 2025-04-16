@@ -44,7 +44,6 @@ const NavChips = () => {
       <NavLink to="/gfg" className="chip">
         GeeksForGeeks
       </NavLink>
-     
 
     </div>
   );
