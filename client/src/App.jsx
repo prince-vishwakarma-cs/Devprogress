@@ -38,9 +38,14 @@ const NavChips = () => {
       <NavLink to="/codechef" className="chip">
         Codechef
       </NavLink>
+      <NavLink to="/user-info" className="chip sm:hidden">
+  <span>User Info</span>
+</NavLink>
       <NavLink to="/gfg" className="chip">
         GeeksForGeeks
       </NavLink>
+     
+
     </div>
   );
 };
@@ -140,6 +145,11 @@ const App = () => {
                       path="/gfg"
                       element={<PrivateRoute element={<GeeksForGeeks />} />}
                     />
+                    <Route
+                      path="/user-info"
+                      element={<PrivateRoute element={<Userinfo />} />}
+                    />
+
                     <Route path="/*" element={<NotFound />} />
                   </Routes>
                 </Suspense>
