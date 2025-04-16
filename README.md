@@ -64,7 +64,6 @@ API_KEY="your_cloudinary_api_key"
 API_SECRET="your_cloudinary_api_secret"
 CLOUDINARY_FOLDER="DevProgress"
 FRONTEND_URL="http://localhost:5173"
-
    ```
 
    Start the backend server:
@@ -87,7 +86,6 @@ FRONTEND_URL="http://localhost:5173"
    ```env
   VITE_LEET="https://leetcode-api.example.com"
 VITE_SERVER="http://localhost:4000"
-
    ```
 
    Start the frontend development server:
